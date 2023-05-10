@@ -1,0 +1,4 @@
+Warning (10268): Verilog HDL information at SELEC_ALU.v(23): always construct contains both blocking and non-blocking assignments File: C:/Users/Tobias Scala/Documents/Quartus Prime Lite/Electro 5/SELEC_ALU.v Line: 23
+Warning (10268): Verilog HDL information at ROM_v.v(58): always construct contains both blocking and non-blocking assignments File: C:/Users/Tobias Scala/Documents/Quartus Prime Lite/Electro 5/ROM_v.v Line: 58
+Warning (10268): Verilog HDL information at PC_v.v(16): always construct contains both blocking and non-blocking assignments File: C:/Users/Tobias Scala/Documents/Quartus Prime Lite/Electro 5/PC_v.v Line: 16
+Warning (10268): Verilog HDL information at UC_v.v(23): always construct contains both blocking and non-blocking assignments File: C:/Users/Tobias Scala/Documents/Quartus Prime Lite/Electro 5/UC_v.v Line: 23

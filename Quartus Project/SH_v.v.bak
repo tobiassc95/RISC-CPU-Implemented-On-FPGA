@@ -1,0 +1,14 @@
+module SHIFT_v (input [1:0] op, input [15:0] C, output reg [15:0] C_);
+//	reg [31:0] temp;
+	parameter NOP = 2'b00,
+				 SHL = 2'b01,
+				 SHR = 2'b10;
+	always@ (C, op) begin
+		case (op)
+			NOP : C_ = C;
+			SHL : C_ = C << 1;
+			SHR : C_ = C >> 1;
+			default : C_ = 0; 
+		endcase
+	end
+endmodule

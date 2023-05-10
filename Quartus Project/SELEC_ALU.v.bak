@@ -1,0 +1,52 @@
+module SELEC_ALU (input [3:0] op, 
+				  input signed [15:0] A, B, 
+				  output reg signed [15:0] C, 
+				  output reg [3:0] CCR);
+//	reg [31:0] temp;
+	parameter NOPA = 4'b0000,
+				 NOPB = 4'b0001,
+				 NOTA = 4'b0010,
+				 AND = 4'b0011, 						
+				 OR = 4'b0100,
+				 XOR = 4'b0101,
+				 ADD = 4'b0110, //agregar el CY. C=A+B+CY
+				 SUB = 4'b0111, //agregar el CY. C=A-B-CY
+				 MUL = 4'b1000,
+				 DIV = 4'b1001,
+				 MOD = 4'b1010,
+				 CLRC = 4'b1011,
+				 SETC = 4'b1100;
+	always@ (A, B, op) begin
+		CCR = 4'b0000; //CCR = [N,Z,V,C]
+		case (op)
+			NOP : C = A;
+			INC : begin 
+				C = A + 1;
+				if (C < 0 && A > 0)
+					CCR = 4'b0011;
+			end
+			ADD : begin 
+				C = A + B;
+				if ((C > 0 && A < 0 && B < 0) || (C < 0 && A > 0 && B > 0))
+					CCR = 4'b0010;
+//				if (A + B > 4'hffff)
+//					CCR |= 4'b0001;
+			end
+			SUB : begin 
+				C = A - B;
+				if ((C > 0 && A < 0 && B > 0) || (C < 0 && A > 0 && B < 0))
+					CCR = 4'b0010;
+			end
+			MUL : C = A * B;
+			DIV : C = A / B;
+			NOT : C = ~A;
+			AND : C = A & B;
+			OR : C = A | B;
+			XOR : C = A ^ B;
+			default : C = 0; 
+		endcase	
+		if(C == 0)
+			CCR = CCR | 4'b0100;
+		else if(C < 0)
+			CCR = CCR | 4'b1000;
+	end

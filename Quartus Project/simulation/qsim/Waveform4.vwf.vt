@@ -1,0 +1,401 @@
+// Copyright (C) 2019  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "06/02/2021 13:20:29"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          CPU_
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module CPU__vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg CLK;
+reg [15:0] treg_M;
+reg MemR;
+reg MemW;
+reg [4:0] op;
+reg [1:0] op_;
+reg [4:0] SelA;
+reg [5:0] SelB;
+reg [5:0] SelC;
+reg [15:0] ToW;
+// wires                                               
+wire [3:0] CCR;
+wire [15:0] M;
+wire [15:0] outA;
+wire [15:0] outB;
+wire [15:0] outC;
+
+// assign statements (if any)                          
+assign M = treg_M;
+CPU_ i1 (
+// port map - connection between master ports and signals/registers   
+	.CCR(CCR),
+	.CLK(CLK),
+	.M(M),
+	.MemR(MemR),
+	.MemW(MemW),
+	.op(op),
+	.op_(op_),
+	.outA(outA),
+	.outB(outB),
+	.outC(outC),
+	.SelA(SelA),
+	.SelB(SelB),
+	.SelC(SelC),
+	.ToW(ToW)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// CLK
+initial
+begin
+	CLK = 1'b1;
+	CLK = #125000 1'b0;
+	# 125000;
+	repeat(2)
+	begin
+		CLK = 1'b1;
+		CLK = #125000 1'b0;
+		# 125000;
+	end
+	CLK = 1'b1;
+	CLK = #125000 1'b0;
+end 
+// SelA[ 4 ]
+initial
+begin
+	SelA[4] = 1'b0;
+end 
+// SelA[ 3 ]
+initial
+begin
+	SelA[3] = 1'b0;
+end 
+// SelA[ 2 ]
+initial
+begin
+	SelA[2] = 1'b0;
+end 
+// SelA[ 1 ]
+initial
+begin
+	SelA[1] = 1'b0;
+end 
+// SelA[ 0 ]
+initial
+begin
+	SelA[0] = 1'b1;
+	SelA[0] = #135000 1'b0;
+	SelA[0] = #250000 1'b1;
+	SelA[0] = #250000 1'b0;
+	SelA[0] = #250000 1'b1;
+end 
+// SelB[ 5 ]
+initial
+begin
+	SelB[5] = 1'b0;
+end 
+// SelB[ 4 ]
+initial
+begin
+	SelB[4] = 1'b0;
+end 
+// SelB[ 3 ]
+initial
+begin
+	SelB[3] = 1'b0;
+end 
+// SelB[ 2 ]
+initial
+begin
+	SelB[2] = 1'b0;
+end 
+// SelB[ 1 ]
+initial
+begin
+	SelB[1] = 1'b0;
+end 
+// SelB[ 0 ]
+initial
+begin
+	SelB[0] = 1'b0;
+	SelB[0] = #135000 1'b1;
+	SelB[0] = #250000 1'b0;
+	SelB[0] = #250000 1'b1;
+	SelB[0] = #250000 1'b0;
+end 
+// op[ 4 ]
+initial
+begin
+	op[4] = 1'b0;
+end 
+// op[ 3 ]
+initial
+begin
+	op[3] = 1'b0;
+end 
+// op[ 2 ]
+initial
+begin
+	op[2] = 1'b0;
+	op[2] = #135000 1'b1;
+	op[2] = #750000 1'b0;
+end 
+// op[ 1 ]
+initial
+begin
+	op[1] = 1'b0;
+	op[1] = #635000 1'b1;
+	op[1] = #250000 1'b0;
+end 
+// op[ 0 ]
+initial
+begin
+	op[0] = 1'b0;
+end 
+// op_[ 1 ]
+initial
+begin
+	op_[1] = 1'b0;
+end 
+// op_[ 0 ]
+initial
+begin
+	op_[0] = 1'b0;
+	op_[0] = #135000 1'b1;
+	op_[0] = #250000 1'b0;
+	op_[0] = #250000 1'b1;
+	op_[0] = #250000 1'b0;
+end 
+// SelC[ 5 ]
+initial
+begin
+	SelC[5] = 1'b0;
+end 
+// SelC[ 4 ]
+initial
+begin
+	SelC[4] = 1'b0;
+end 
+// SelC[ 3 ]
+initial
+begin
+	SelC[3] = 1'b0;
+end 
+// SelC[ 2 ]
+initial
+begin
+	SelC[2] = 1'b0;
+end 
+// SelC[ 1 ]
+initial
+begin
+	SelC[1] = 1'b0;
+end 
+// SelC[ 0 ]
+initial
+begin
+	SelC[0] = 1'b0;
+	SelC[0] = #385000 1'b1;
+	SelC[0] = #250000 1'b0;
+	SelC[0] = #250000 1'b1;
+end 
+// M[ 15 ]
+initial
+begin
+	treg_M[15] = 1'bZ;
+end 
+// M[ 14 ]
+initial
+begin
+	treg_M[14] = 1'bZ;
+end 
+// M[ 13 ]
+initial
+begin
+	treg_M[13] = 1'bZ;
+end 
+// M[ 12 ]
+initial
+begin
+	treg_M[12] = 1'bZ;
+end 
+// M[ 11 ]
+initial
+begin
+	treg_M[11] = 1'bZ;
+end 
+// M[ 10 ]
+initial
+begin
+	treg_M[10] = 1'bZ;
+end 
+// M[ 9 ]
+initial
+begin
+	treg_M[9] = 1'bZ;
+end 
+// M[ 8 ]
+initial
+begin
+	treg_M[8] = 1'bZ;
+end 
+// M[ 7 ]
+initial
+begin
+	treg_M[7] = 1'bZ;
+end 
+// M[ 6 ]
+initial
+begin
+	treg_M[6] = 1'bZ;
+end 
+// M[ 5 ]
+initial
+begin
+	treg_M[5] = 1'bZ;
+end 
+// M[ 4 ]
+initial
+begin
+	treg_M[4] = 1'bZ;
+end 
+// M[ 3 ]
+initial
+begin
+	treg_M[3] = 1'bZ;
+end 
+// M[ 2 ]
+initial
+begin
+	treg_M[2] = 1'bZ;
+end 
+// M[ 1 ]
+initial
+begin
+	treg_M[1] = 1'bZ;
+end 
+// M[ 0 ]
+initial
+begin
+	treg_M[0] = 1'bZ;
+end 
+// ToW[ 15 ]
+initial
+begin
+	ToW[15] = 1'b0;
+end 
+// ToW[ 14 ]
+initial
+begin
+	ToW[14] = 1'b0;
+end 
+// ToW[ 13 ]
+initial
+begin
+	ToW[13] = 1'b0;
+end 
+// ToW[ 12 ]
+initial
+begin
+	ToW[12] = 1'b0;
+end 
+// ToW[ 11 ]
+initial
+begin
+	ToW[11] = 1'b0;
+end 
+// ToW[ 10 ]
+initial
+begin
+	ToW[10] = 1'b0;
+end 
+// ToW[ 9 ]
+initial
+begin
+	ToW[9] = 1'b0;
+end 
+// ToW[ 8 ]
+initial
+begin
+	ToW[8] = 1'b0;
+end 
+// ToW[ 7 ]
+initial
+begin
+	ToW[7] = 1'b0;
+end 
+// ToW[ 6 ]
+initial
+begin
+	ToW[6] = 1'b0;
+end 
+// ToW[ 5 ]
+initial
+begin
+	ToW[5] = 1'b0;
+end 
+// ToW[ 4 ]
+initial
+begin
+	ToW[4] = 1'b0;
+end 
+// ToW[ 3 ]
+initial
+begin
+	ToW[3] = 1'b0;
+end 
+// ToW[ 2 ]
+initial
+begin
+	ToW[2] = 1'b0;
+end 
+// ToW[ 1 ]
+initial
+begin
+	ToW[1] = 1'b0;
+end 
+// ToW[ 0 ]
+initial
+begin
+	ToW[0] = 1'b0;
+end 
+
+// MemR
+initial
+begin
+	MemR = 1'b0;
+end 
+
+// MemW
+initial
+begin
+	MemW = 1'b0;
+end 
+endmodule
+

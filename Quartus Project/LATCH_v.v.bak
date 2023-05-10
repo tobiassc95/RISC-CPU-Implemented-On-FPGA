@@ -1,0 +1,14 @@
+module LATCH_v (input en, input [15:0] in, output reg [15:0] out);
+	//reg [15:0] temp;
+	always@(en, in) begin
+		if(en)
+			out = in;
+	end
+endmodule
+
+//module LATCH_v (input clk, input [15:0] in, output reg [15:0] out);
+//	//reg [15:0] temp;
+//	always@(posedge clk) begin
+//		out = in;
+//	end
+//endmodule

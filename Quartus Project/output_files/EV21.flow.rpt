@@ -1,0 +1,152 @@
+Flow report for EV21
+Sun Sep 19 18:02:35 2021
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Sun Sep 19 18:02:35 2021       ;
+; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Revision Name                      ; EV21                                        ;
+; Top-level Entity Name              ; CPU                                         ;
+; Family                             ; Cyclone IV E                                ;
+; Device                             ; EP4CE22F17C6                                ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 1,024                                       ;
+;     Total combinational functions  ; 930                                         ;
+;     Dedicated logic registers      ; 140                                         ;
+; Total registers                    ; 140                                         ;
+; Total pins                         ; 162                                         ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 132,192                                     ;
+; Embedded Multiplier 9-bit elements ; 2                                           ;
+; Total PLLs                         ; 1                                           ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 06/22/2021 13:55:40 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; EV21                ;
++-------------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                               ;
++-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
++-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID               ; 26516767829458.162438094018368         ; --            ; --          ; --                                ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --            ; --          ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>        ; --          ; --                                ;
+; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --                                ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --                                ;
+; MISC_FILE                           ; PLL.bsf                                ; --            ; --          ; --                                ;
+; MISC_FILE                           ; PLL_bb.v                               ; --            ; --          ; --                                ;
+; MISC_FILE                           ; PLL.ppf                                ; --            ; --          ; --                                ;
+; MISC_FILE                           ; PROGRAM.bsf                            ; --            ; --          ; --                                ;
+; MISC_FILE                           ; PROGRAM_bb.v                           ; --            ; --          ; --                                ;
+; MISC_FILE                           ; DATA.bsf                               ; --            ; --          ; --                                ;
+; MISC_FILE                           ; DATA_bb.v                              ; --            ; --          ; --                                ;
+; MISC_FILE                           ; ADDSUB_b.bsf                           ; --            ; --          ; --                                ;
+; MISC_FILE                           ; ADDSUB_b_bb.v                          ; --            ; --          ; --                                ;
+; MISC_FILE                           ; MUL_b.bsf                              ; --            ; --          ; --                                ;
+; MISC_FILE                           ; MUL_b_bb.v                             ; --            ; --          ; --                                ;
+; MISC_FILE                           ; DIV_b.bsf                              ; --            ; --          ; --                                ;
+; MISC_FILE                           ; DIV_b_bb.v                             ; --            ; --          ; --                                ;
+; MISC_FILE                           ; CONST_b.bsf                            ; --            ; --          ; --                                ;
+; MISC_FILE                           ; CONST_b_bb.v                           ; --            ; --          ; --                                ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --                                ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; CPU         ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; CPU         ; Top                               ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; CPU         ; Top                               ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --                                ;
+; TOP_LEVEL_ENTITY                    ; CPU                                    ; EV21          ; --          ; --                                ;
++-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:20     ; 1.0                     ; 4811 MB             ; 00:00:43                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4642 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4648 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4644 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4648 MB             ; 00:00:01                           ;
+; Total                ; 00:00:26     ; --                      ; --                  ; 00:00:48                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; DESKTOP-K9KOPB8  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-K9KOPB8  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-K9KOPB8  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-K9KOPB8  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-K9KOPB8  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off EV21 -c EV21
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off EV21 -c EV21 --vector_source="C:/Users/Tobias Scala/Documents/Quartus Prime Lite/Electro 5/Waveform.vwf" --testbench_file="C:/Users/Tobias Scala/Documents/Quartus Prime Lite/Electro 5/simulation/qsim/Waveform.vwf.vt"
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/Tobias Scala/Documents/Quartus Prime Lite/Electro 5/simulation/qsim/" EV21 -c EV21
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off EV21 -c EV21 --vector_source="C:/Users/Tobias Scala/Documents/Quartus Prime Lite/Electro 5/Waveform.vwf" --testbench_file="C:/Users/Tobias Scala/Documents/Quartus Prime Lite/Electro 5/simulation/qsim/Waveform.vwf.vt"
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/Tobias Scala/Documents/Quartus Prime Lite/Electro 5/simulation/qsim/" EV21 -c EV21
+
+
+
